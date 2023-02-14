@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+</head>
+
+<body bgcolor="#FFFFCC">
+
+<p>&nbsp;</p>
+<p>
+
+<p>
+<img border="0" src="beakers/beakerwhite1.png" id="phenol" title="Beaker containing 2g of Phenol" style="position: absolute; left: 234; top: 276; cursor:pointer"; 
+onclick="document.getElementById(this.id).style.visibility='hidden';
+document.getElementById('beakerfalling').style.visibility='visible';
+setTimeout( function() { document.getElementById('beakerfalling').style.visibility='hidden';document.getElementById('beaker').src='beakers/beakerwhite0.png';
+; document.getElementById('measuringcylinder5ml').style.visibility='visible'},1000)" width="106" height="113"></p>
+
+<p>
+<img border="0" src="beakers/beakerfalling.png" id="beakerfalling" width="106" height="113" style="position: absolute; left: 484; top: 82; visibility:hidden"></p>
+
+<img border="0" src="beakers/beaker.png" id="beaker" style="position: absolute; left: 568; top: 179; width:259px; height:263px"></p>
+
+
+<p>
+<img border="0" src="measuringcylinder5ml.png"  title="Measuring Cylinder containing 5ml of glacial acetic acid" style="position: absolute; left: 236; top: 149; visibility: hidden; cursor:pointer; width:83px; height:289px" id="measuringcylinder5ml" onclick="
+document.getElementById(this.id).style.visibility='hidden';
+document.getElementById('measuringcylinderfalling').style.visibility='visible';
+setTimeout(function() {document.getElementById('measuringcylinderfalling').style.visibility='hidden';
+document.getElementById('beaker').src='beakers/beakerwhite1.png'; document.getElementById('measuringcylinder2ml').style.visibility='visible'},1000)"></p>
+<p>
+
+<img border="0" src="measuringcylinder2ml.png" width="87" height="276"  title="Measuring Cylinder containing 2.5ml of 40% formaldehyde" style="position: absolute; left: 236; top: 149; visibility: hidden; cursor:pointer; width:83px; height:289px" id="measuringcylinder2ml" onclick="
+document.getElementById(this.id).style.visibility='hidden';
+document.getElementById('measuringcylinderfalling').style.visibility='visible';
+setTimeout(function() {document.getElementById('measuringcylinderfalling').style.visibility='hidden';
+document.getElementById('beaker').src='beakers/beakerwhite2.png'; document.getElementById('measuringcylinder10ml').style.visibility='visible'},1000)">
+
+<img border="0" src="measuringcylinder10ml.png" width="57" height="188"  title="Measuring Cylinder containing 10ml of Conc. HCl" style="position: absolute; left: 236; top: 149; visibility: hidden; cursor:pointer; width:83px; height:289px" id="measuringcylinder10ml" onclick="
+document.getElementById(this.id).style.visibility='hidden';
+document.getElementById('measuringcylinderfalling').style.visibility='visible';
+setTimeout(function() {document.getElementById('measuringcylinderfalling').style.visibility='hidden';
+document.getElementById('beaker').src='beakers/beakerwhite3.png'; alert('Wait for 20 minutes for the reaction to complete...')
+document.getElementById('pinksolute').style.visibility='visible';
+},1000)">
+
+<img border="0" src="measuringcylinderfalling.png" style="position: absolute; left: 330; top: 105; visibility: hidden; width:314px; height:82px" id="measuringcylinderfalling"></p>
+
+<p>
+<img border="0" src="pinksolute.png" title="Phenol Formaldehyde resin" id="pinksolute" style="position: absolute; visibility:hidden; cursor:pointer; left: 614; top: 355; width: 129px; height: 63px"
+ onclick="document.getElementById('beaker').style.visibility='hidden';
+          document.getElementById('acidtest').style.visibility='visible';
+         
+ "></p>
+
+<form method="POST" action="--WEBBOT-SELF--">
+	<!--webbot bot="SaveResults" U-File="fpweb:///_private/form_results.csv" S-Format="TEXT/CSV" S-Label-Fields="TRUE" -->
+	<p>
+	<input type="button" value="Test with Dil. acid" name="acidtest" id="acidtest" onclick="document.getElementById('acidtesttube').style.visibility='visible'; setTimeout(document.getElementById('alkalitest').style.visibility='visible' , 1000);" style="position: absolute; left: 812; top: 114; visibility:hidden">&nbsp;
+	<input type="button" value="Test with Dil. alkali" name="alkalitest" id="alkalitest" onclick="document.getElementById('alkalitesttube').style.visibility='visible';" style="position: absolute; left: 968; top: 114; visibility:hidden">&nbsp;
+	</p>
+</form>
+
+<p>
+<img border="0" src="white.png" id="acidtesttube" title="Partially soluble in Dil. acid" style="position: absolute; left: 850; top: 221; height: 172px; width: 34px; visibility:hidden"></p>
+<img border="0" src="white.png" id="alkalitesttube" title="Partially soluble in dil. alkali" style="position: absolute; left: 1009; top: 221; height: 172px; width: 34px; visibility:hidden"></p>
+
+</body>
+
+</html>
